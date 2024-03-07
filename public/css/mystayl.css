@@ -1,0 +1,56 @@
+.card:hover {
+    transform: scale(1.05);
+    transition: transform .3s ease-in-out;
+}
+
+    body {
+        background-color: #f4f7f6; /* Light background for contrast */
+    }
+    .picture-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .picture-card img {
+        transition: transform .3s ease-in-out;
+        border-radius: 10px; /* Match parent's border-radius */
+    }
+    .picture-card:hover .card-img-top {
+        transform: scale(1.05); /* Subtle zoom effect */
+    }
+    .picture-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.6); /* Slightly lighter overlay for better text readability */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    .picture-card:hover .picture-details {
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn-modern {
+        border: none;
+        background-color: #007bff; /* Bootstrap primary */
+        color: white;
+        border-radius: 20px;
+        padding: 8px 15px;
+        margin-top: 10px;
+        transition: background-color .3s ease-in-out;
+    }
+    .btn-modern:hover {
+        background-color: #0056b3; /* Darker shade for hover effect */
+    }
+    .container {
+        padding-top: 2rem;
+    }
